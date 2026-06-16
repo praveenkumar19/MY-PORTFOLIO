@@ -31,22 +31,21 @@ CSS3	EmailJS
 JavaScript	Google Fonts
 Devicon Icons
 
-📁 Project Structure
-
-text
-
 PORTFOLIO/
-├── index.html              # Main portfolio file
-├── my_resume.html          # Resume page
-├── assets/
-│   ├── signature-dark-.png
-│   ├── signature-light-.png
-│   ├── passport-.png
-│   ├── dr.clinic.jpeg
-│   ├── grocery.png
-│   ├── Campus.jpg
-│   └── canva.png
-└── README.md
+│
+├── 📄 index.html                 # Main portfolio file
+├── 📄 my_resume.html             # Resume page
+│
+├── 📂 assets/
+│   ├── 🖼️ signature-dark-.png    # Dark mode logo
+│   ├── 🖼️ signature-light-.png   # Light mode logo
+│   ├── 🖼️ passport-.png          # Profile photo
+│   ├── 🖼️ dr.clinic.jpeg         # Project 1 thumbnail
+│   ├── 🖼️ grocery.png            # Project 2 thumbnail
+│   ├── 🖼️ Campus.jpg             # Project 3 thumbnail
+│   └── 🖼️ canva.png              # Canva tool icon
+│
+└── 📄 README.md                  # Project documentation
 
 🧩 Features Breakdown
 
