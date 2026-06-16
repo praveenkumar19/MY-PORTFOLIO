@@ -82,7 +82,7 @@ This portfolio represents my skills, projects, and digital presence with an imme
 ---
 
 ## 📁 Project Structure
-
+```bash
 
 PORTFOLIO/
 │
@@ -99,7 +99,7 @@ PORTFOLIO/
 │ └── canva.png
 │
 └── README.md
-
+```
 
 ---
 
@@ -179,8 +179,8 @@ PORTFOLIO/
 ## 🔧 Setup
 
 ### Clone Repository
-```bash
-git clone https://github.com/praveenkumar19/PORTFOLIO.git
+
+git clone  https://github.com/praveenkumar19/PORTFOLIO.git
 Open Project
 cd PORTFOLIO
 
@@ -216,4 +216,4 @@ EmailJS
 Devicon
 Google Fonts
 Open-source community
-<p align="center"> <b>⭐ If you like this project, give it a star! ⭐</b><br> <i>Made with ❤️ by Praveen Kumar</i> </p> ```
+<p align="center"> <b>⭐ If you like this project, give it a star! ⭐</b><br> <i>Made with ❤️ by Praveen Kumar</i> </p> 
