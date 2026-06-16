@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Kumar - Software Engineer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', 'Arial', 'Helvetica', sans-serif;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+            color: #333333;
+        }
+
+        /* Resume Container - Clean white background */
+        .resume {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 2.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 0px;
+        }
+
+        /* Header Section - Proper alignment */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            border-bottom: 2px solid #2c7da0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .header-left h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #1a3c4a;
+            letter-spacing: 1px;
+            margin-bottom: 0.3rem;
+        }
+
+        .header-left .title {
+            font-size: 1rem;
+            color: #2c7da0;
+            font-weight: 500;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.85rem;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-info a {
+            color: #2c7da0;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Headings */
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a3c4a;
+            border-left: 4px solid #2c7da0;
+            padding-left: 0.75rem;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Objective */
+        .objective-text {
+            font-size: 0.92rem;
+            color: #444444;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1a3c4a;
+            margin-bottom: 0.2rem;
+        }
+
+        .edu-institute {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #2c7da0;
+            margin-bottom: 0.2rem;
+        }
+
+        .edu-date {
+            font-size: 0.85rem;
+            color: #777777;
+            margin-bottom: 0.3rem;
+        }
+
+        .coursework {
+            font-size: 0.85rem;
+            color: #555555;
+            margin-top: 0.3rem;
+        }
+
+        /* Skills - Clean grid */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 0.3rem;
+        }
+
+        .skill-category {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .skill-category h4 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #1a3c4a;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-badge {
+            background: #f0f4f8;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.8rem;
+            color: #1a3c4a;
+            border-radius: 3px;
+        }
+
+        /* Projects */
+        .project-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1a3c4a;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.4rem;
+        }
+
+        .project-stack {
+            font-size: 0.75rem;
+            font-weight: normal;
+            color: #2c7da0;
+            font-family: monospace;
+        }
+
+        .project-desc {
+            padding-left: 1.2rem;
+        }
+
+        .project-desc li {
+            font-size: 0.88rem;
+            margin-bottom: 0.3rem;
+            color: #555555;
+        }
+
+        /* Experience */
+        .exp-item {
+            margin-bottom: 1rem;
+        }
+
+        .exp-role {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1a3c4a;
+            margin-bottom: 0.4rem;
+        }
+
+        .exp-desc {
+            padding-left: 1.2rem;
+        }
+
+        .exp-desc li {
+            font-size: 0.88rem;
+            margin-bottom: 0.3rem;
+            color: #555555;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "▹";
+            color: #2c7da0;
+            display: inline-block;
+            width: 1.2rem;
+        }
+
+        /* Certifications */
+        .cert-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.88rem;
+            color: #555555;
+        }
+
+        .cert-icon {
+            min-width: 1.2rem;
+        }
+
+        /* Additional Info */
+        .additional-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-card {
+            flex: 1;
+            min-width: 200px;
+            font-size: 0.85rem;
+            color: #555555;
+            padding: 0.3rem 0;
+        }
+
+        hr {
+            margin: 1.5rem 0 1rem;
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+        }
+
+        .footer {
+            font-size: 0.7rem;
+            text-align: center;
+            color: #999999;
+            margin-top: 1rem;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                margin: 0;
+            }
+            .resume {
+                box-shadow: none;
+                padding: 0.5cm;
+                max-width: 100%;
+            }
+            .contact-info a {
+                text-decoration: none;
+                color: black;
+            }
+            .skill-badge {
+                background: #f0f0f0;
+                border: 1px solid #ccc;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .resume {
+                padding: 1.2rem;
+            }
+            .header {
+                flex-direction: column;
+            }
+            .contact-info {
+                text-align: left;
+            }
+            .project-title {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .skills-container {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
+        /* Enhanced Certifications Styling */
+.cert-subsection {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.cert-subtitle {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #2c7da0;
+    margin-bottom: 0.6rem;
+    margin-top: 0.3rem;
+    letter-spacing: 0.3px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.45rem;
+    font-size: 0.85rem;
+    color: #444444;
+    line-height: 1.4;
+}
+
+.cert-icon {
+    min-width: 1.2rem;
+    color: #2c7da0;
+    font-size: 0.8rem;
+}
+
+.cert-item strong {
+    color: #1a3c4a;
+    font-weight: 600;
+}
+
+.cert-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+
+.cert-badge {
+    background: linear-gradient(135deg, #e8f4f8, #d4eaf1);
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #1a5c6e;
+    letter-spacing: 0.3px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cert-item {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    .cert-subtitle {
+        font-size: 0.85rem;
+    }
+    .cert-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.7rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <h1>PRAVEEN KUMAR</h1>
+                <div class="title">Aspiring Software Engineer</div>
+            </div>
+            <div class="contact-info">
+                <p>Chennai, India | +91 9094392300</p>
+                <p>mrapraveenkumar200719@gmail.com</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/praveen-kumar-792b8a395/" target="_blank">LinkedIn</a> | 
+                    <a href="https://github.com/praveenkumar19" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Objective -->
+        <div class="section">
+            <div class="section-title">Objective</div>
+            <div class="objective-text">
+                Passionate and motivated Computer Science student seeking an entry-level software engineering role. Eager to apply web development skills and continuously learn emerging technologies to build efficient, user-centric applications. Strong foundation in front-end development and object-oriented programming with a commitment to delivering clean, maintainable code.
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education-item">
+                <div class="edu-degree">B.E. Computer Science Engineering (Cyber Security)</div>
+                <div class="edu-institute">Prince Dr. K. Vasudevan College of Engineering and Technology</div>
+                <div class="edu-date">Expected Graduation: 2029</div>
+                <div class="coursework">Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Web Development, Database Management Systems</div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <div class="skill-items">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend Technologies</h4>
+                    <div class="skill-items">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Concepts</h4>
+                    <div class="skill-items">
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">OOP</span>
+                        <span class="skill-badge">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">Projects</div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    DR Clinic Management Website
+                    <span class="project-stack">HTML, CSS, JavaScript</span>
+                </div>
+                <ul class="project-desc">
+                    <li>Built a responsive web application to manage patient records and appointment scheduling.</li>
+                    <li>Implemented client-side form validation and dynamic content updates using vanilla JavaScript.</li>
+                    <li>Designed an intuitive interface to add, view, and edit patient information efficiently.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    Grocery Website
+                    <span class="project-stack">HTML, CSS, JavaScript</span>
+                </div>
+                <ul class="project-desc">
+                    <li>Developed a modern grocery ordering platform allowing users to browse products, view categories, and simulate orders.</li>
+                    <li>Created interactive features including a dynamic product display, add-to-cart functionality, and order summary simulation.</li>
+                    <li>Managed application state using JavaScript arrays and DOM manipulation for real-time cart updates.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <div class="section-title">Experience</div>
+            <div class="exp-item">
+                <div class="exp-role">Student Developer (Academic & Personal Projects)</div>
+                <ul class="exp-desc">
+                    <li>Developed and deployed multiple front-end web applications independently, strengthening problem-solving and debugging skills.</li>
+                    <li>Collaborated on code versioning using Git and GitHub, maintaining clean commit history and project documentation.</li>
+                    <li>Applied Object-Oriented Programming principles to structure reusable, modular code in JavaScript and Python.</li>
+                    <li>Continuously learning backend frameworks and database integration to become a full-stack developer.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <!-- Certifications & Achievements - Improved Version -->
+<div class="section">
+    <div class="section-title">Certifications & Achievements</div>
+    
+    <!-- AI & Claude Certifications - Anthropic -->
+    <div class="cert-subsection">
+        <h4 class="cert-subtitle">🤖 AI & Claude Certification (Anthropic)</h4>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Fluency for Small Businesses</strong> – Anthropic (May 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Capabilities and Limitations</strong> – Anthropic (Apr 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Fluency for Educators</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Fluency for Nonprofits</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Fluency for Students</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>AI Fluency Framework & Foundations</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Claude 101</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Building with the Claude API</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Claude Code in Action</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Claude in Amazon Bedrock</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Claude with Google Cloud's Vertex AI</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Introduction to Agent Skills</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Introduction to Claude Cowork</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Introduction to Model Context Protocol</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Introduction to Subagents</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Model Context Protocol: Advanced Topics</strong> – Anthropic (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Teaching the AI Fluency Framework</strong> – Anthropic (Mar 2026)</span>
+        </div>
+    </div>
+
+    <!-- Programming & Development -->
+    <div class="cert-subsection">
+        <h4 class="cert-subtitle">💻 Programming & Development</h4>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Fundamentals of Object Oriented Programming</strong> – NPTEL (May 2026) | ID: NPTEL26CS87S1550306788</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Introduction to Python</strong> – Infosys Springboard (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Python Fundamentals</strong> – Infosys Springboard (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Java Programming Fundamentals</strong> – Infosys Springboard (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Java Course – Mastering the Fundamentals</strong> – Scaler (Oct 2025)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>JavaScript Course: Unlocking the Power of JavaScript</strong> – Scaler (Nov 2025)</span>
+        </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="cert-subsection">
+        <h4 class="cert-subtitle">🌐 Web Development</h4>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Responsive Web Development (HTML5, CSS3, JavaScript)</strong> – Infosys Springboard (Mar 2026)</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Legacy Responsive Web Design V8</strong> – freeCodeCamp (Mar 2026) | ID: praveenkumar19/responsive-web-design</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Responsive Web Design Developer</strong> – freeCodeCamp (Feb 2026) | ID: praveenkumar19/responsive-web-design-v9</span>
+        </div>
+    </div>
+
+    <!-- Cloud & Microsoft -->
+    <div class="cert-subsection">
+        <h4 class="cert-subtitle">☁️ Cloud & Microsoft Technologies</h4>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Secure Storage for Azure Files and Azure Blob Storage</strong> – Microsoft (Oct 2025) | ID: 86262DF264722A5F</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Create and Manage Canvas Apps with Power Apps</strong> – Microsoft (Oct 2025) | ID: 581A4F13A544D4F7</span>
+        </div>
+    </div>
+
+    <!-- Soft Skills & Design -->
+    <div class="cert-subsection">
+        <h4 class="cert-subtitle">🎯 Soft Skills & Design</h4>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Communication Skills</strong> – TCS iON (Nov 2025) | ID: 91306-29495298-1016</span>
+        </div>
+        <div class="cert-item">
+            <span class="cert-icon">▹</span>
+            <span><strong>Digital Skills: User Experience</strong> – FutureLearn (Oct 2025)</span>
+        </div>
+    </div>
+
+    <!-- Summary Badge -->
+    <div class="cert-summary">
+        <span class="cert-badge">🏆 25+ Certifications</span>
+        <span class="cert-badge">📅 2025-2026</span>
+        <span class="cert-badge">🎓 Multiple Platforms</span>
+    </div>
+</div>
+
+        <!-- Additional Information -->
+        <div class="section">
+            <div class="section-title">Additional Information</div>
+            <div class="additional-grid">
+                <div class="info-card">🌐 Languages: English (Professional), Tamil</div>
+                <div class="info-card">💡 Interests: Open-source, tech blogging, side projects</div>
+                <div class="info-card">🎯 Availability: Internships / entry-level roles (immediate)</div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="footer">Portfolio resume – Last updated April 2026</div>
+    </div>
+</body>
+</html>
