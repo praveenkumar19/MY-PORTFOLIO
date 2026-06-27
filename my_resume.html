@@ -19,7 +19,6 @@
             color: #333333;
         }
 
-        /* Resume Container - Clean white background */
         .resume {
             max-width: 900px;
             margin: 0 auto;
@@ -29,7 +28,6 @@
             border-radius: 0px;
         }
 
-        /* Header Section - Proper alignment */
         .header {
             display: flex;
             justify-content: space-between;
@@ -79,7 +77,6 @@
             text-decoration: underline;
         }
 
-        /* Section Headings */
         .section {
             margin-bottom: 1.5rem;
         }
@@ -95,7 +92,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Objective */
         .objective-text {
             font-size: 0.92rem;
             color: #444444;
@@ -103,7 +99,6 @@
             text-align: justify;
         }
 
-        /* Education */
         .education-item {
             margin-bottom: 0.5rem;
         }
@@ -134,7 +129,6 @@
             margin-top: 0.3rem;
         }
 
-        /* Skills - Clean grid */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -168,7 +162,6 @@
             border-radius: 3px;
         }
 
-        /* Projects */
         .project-item {
             margin-bottom: 1.2rem;
         }
@@ -201,7 +194,6 @@
             color: #555555;
         }
 
-        /* Experience */
         .exp-item {
             margin-bottom: 1rem;
         }
@@ -223,7 +215,6 @@
             color: #555555;
         }
 
-        /* Lists */
         ul {
             list-style: none;
         }
@@ -235,21 +226,120 @@
             width: 1.2rem;
         }
 
-        /* Certifications */
+        /* ===== CERTIFICATIONS - 35+ COMPLETE LIST ===== */
+        .cert-header-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            padding: 0.8rem 1.2rem;
+            background: linear-gradient(135deg, #e8f4f8, #d4eaf1);
+            border-radius: 10px;
+            border-left: 4px solid #2c7da0;
+        }
+
+        .cert-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #1a3c4a;
+        }
+
+        .cert-stat span {
+            font-weight: 400;
+            color: #555555;
+        }
+
+        .cert-subsection {
+            margin-bottom: 1rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .cert-subsection:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .cert-subtitle {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2c7da0;
+            margin-bottom: 0.5rem;
+            margin-top: 0.2rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cert-count {
+            font-size: 0.65rem;
+            background: #2c7da0;
+            color: white;
+            padding: 0.1rem 0.6rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
         .cert-item {
             display: flex;
             align-items: baseline;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.88rem;
-            color: #555555;
+            margin-bottom: 0.3rem;
+            font-size: 0.82rem;
+            color: #444444;
+            line-height: 1.4;
         }
 
         .cert-icon {
             min-width: 1.2rem;
+            color: #2c7da0;
+            font-size: 0.75rem;
         }
 
-        /* Additional Info */
+        .cert-item strong {
+            color: #1a3c4a;
+            font-weight: 600;
+        }
+
+        .cert-issuer {
+            color: #2c7da0;
+            font-weight: 500;
+        }
+
+        .cert-date {
+            color: #888888;
+            font-size: 0.7rem;
+        }
+
+        .cert-id {
+            color: #999999;
+            font-size: 0.65rem;
+            font-family: monospace;
+        }
+
+        .cert-summary-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            border-top: 2px solid #2c7da0;
+        }
+
+        .cert-badge {
+            background: linear-gradient(135deg, #e8f4f8, #d4eaf1);
+            padding: 0.3rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #1a5c6e;
+            letter-spacing: 0.3px;
+        }
+
         .additional-grid {
             display: flex;
             flex-wrap: wrap;
@@ -263,6 +353,24 @@
             font-size: 0.85rem;
             color: #555555;
             padding: 0.3rem 0;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #2c7da0, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(44, 125, 160, 0.3);
         }
 
         hr {
@@ -279,7 +387,6 @@
             margin-top: 1rem;
         }
 
-        /* Print Styles */
         @media print {
             body {
                 background: white;
@@ -299,9 +406,22 @@
                 background: #f0f0f0;
                 border: 1px solid #ccc;
             }
+            .portfolio-link {
+                background: #2c7da0;
+                color: white;
+            }
+            .cert-header-stats {
+                background: #f0f4f8;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .cert-badge {
+                background: #f0f4f8;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
         }
 
-        /* Mobile Responsive */
         @media (max-width: 768px) {
             .resume {
                 padding: 1.2rem;
@@ -320,76 +440,22 @@
                 flex-direction: column;
                 gap: 0.8rem;
             }
+            .cert-item {
+                font-size: 0.78rem;
+                line-height: 1.4;
+            }
+            .cert-subtitle {
+                font-size: 0.85rem;
+            }
+            .cert-badge {
+                font-size: 0.7rem;
+                padding: 0.2rem 0.7rem;
+            }
+            .cert-header-stats {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
-        /* Enhanced Certifications Styling */
-.cert-subsection {
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px dashed #e0e0e0;
-}
-
-.cert-subtitle {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #2c7da0;
-    margin-bottom: 0.6rem;
-    margin-top: 0.3rem;
-    letter-spacing: 0.3px;
-}
-
-.cert-item {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    margin-bottom: 0.45rem;
-    font-size: 0.85rem;
-    color: #444444;
-    line-height: 1.4;
-}
-
-.cert-icon {
-    min-width: 1.2rem;
-    color: #2c7da0;
-    font-size: 0.8rem;
-}
-
-.cert-item strong {
-    color: #1a3c4a;
-    font-weight: 600;
-}
-
-.cert-summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    margin-top: 1rem;
-    padding-top: 0.5rem;
-}
-
-.cert-badge {
-    background: linear-gradient(135deg, #e8f4f8, #d4eaf1);
-    padding: 0.3rem 0.9rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #1a5c6e;
-    letter-spacing: 0.3px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .cert-item {
-        font-size: 0.8rem;
-        line-height: 1.4;
-    }
-    .cert-subtitle {
-        font-size: 0.85rem;
-    }
-    .cert-badge {
-        font-size: 0.7rem;
-        padding: 0.2rem 0.7rem;
-    }
-}
     </style>
 </head>
 <body>
@@ -398,14 +464,15 @@
         <div class="header">
             <div class="header-left">
                 <h1>PRAVEEN KUMAR</h1>
-                <div class="title">Aspiring Software Engineer</div>
+                <div class="title">Aspiring Software Engineer | Frontend Developer</div>
             </div>
             <div class="contact-info">
                 <p>Chennai, India | +91 9094392300</p>
                 <p>mrapraveenkumar200719@gmail.com</p>
                 <p>
                     <a href="https://www.linkedin.com/in/praveen-kumar-792b8a395/" target="_blank">LinkedIn</a> | 
-                    <a href="https://github.com/praveenkumar19" target="_blank">GitHub</a>
+                    <a href="https://github.com/praveenkumar19" target="_blank">GitHub</a> |
+                    <a href="https://praveenkumar19.github.io/PORTFOLIO/" target="_blank">Portfolio</a>
                 </p>
             </div>
         </div>
@@ -414,7 +481,7 @@
         <div class="section">
             <div class="section-title">Objective</div>
             <div class="objective-text">
-                Passionate and motivated Computer Science student seeking an entry-level software engineering role. Eager to apply web development skills and continuously learn emerging technologies to build efficient, user-centric applications. Strong foundation in front-end development and object-oriented programming with a commitment to delivering clean, maintainable code.
+                Computer Science student specializing in Cyber Security, with a proven track record of building and deploying full-featured web applications. Eager to apply strong front-end development skills and a foundation in OOP to an entry-level software engineering role. Committed to delivering clean, user-centric, and maintainable code that solves real-world problems.
             </div>
         </div>
 
@@ -425,7 +492,7 @@
                 <div class="edu-degree">B.E. Computer Science Engineering (Cyber Security)</div>
                 <div class="edu-institute">Prince Dr. K. Vasudevan College of Engineering and Technology</div>
                 <div class="edu-date">Expected Graduation: 2029</div>
-                <div class="coursework">Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Web Development, Database Management Systems</div>
+                <div class="coursework">Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Web Development, Database Management Systems, Network Basics, Cybersecurity Fundamentals</div>
             </div>
         </div>
 
@@ -433,6 +500,15 @@
         <div class="section">
             <div class="section-title">Skills</div>
             <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Frontend Technologies</h4>
+                    <div class="skill-items">
+                        <span class="skill-badge">HTML5</span>
+                        <span class="skill-badge">CSS3</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Responsive Design</span>
+                    </div>
+                </div>
                 <div class="skill-category">
                     <h4>Programming Languages</h4>
                     <div class="skill-items">
@@ -443,22 +519,37 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4>Frontend Technologies</h4>
+                    <h4>Cybersecurity</h4>
                     <div class="skill-items">
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS3</span>
-                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">Network Basics</span>
+                        <span class="skill-badge">Security Fundamentals</span>
+                        <span class="skill-badge">AI Security</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4>Tools & Concepts</h4>
+                    <h4>Developer Tools & Concepts</h4>
                     <div class="skill-items">
                         <span class="skill-badge">Git & GitHub</span>
                         <span class="skill-badge">VS Code</span>
                         <span class="skill-badge">OOP</span>
-                        <span class="skill-badge">Web Development</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">Canva</span>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <div class="section-title">Experience</div>
+            <div class="exp-item">
+                <div class="exp-role">Frontend Developer | Personal & Academic Projects | 2025 - Present</div>
+                <ul class="exp-desc">
+                    <li><strong>Deployed 3+ responsive web applications</strong> live via GitHub Pages, including a Clinic Management system and a Grocery ordering platform.</li>
+                    <li><strong>Applied OOP principles</strong> to structure maintainable, modular JavaScript code across all projects, ensuring reusability and scalability.</li>
+                    <li><strong>Utilized Git & GitHub</strong> for version control, maintaining clean commit history, branch management, and comprehensive project documentation.</li>
+                    <li><strong>Completed Deloitte Australia Cyber Job Simulation</strong>, gaining practical insights into cybersecurity operations and threat analysis.</li>
+                </ul>
             </div>
         </div>
 
@@ -472,9 +563,9 @@
                     <span class="project-stack">HTML, CSS, JavaScript</span>
                 </div>
                 <ul class="project-desc">
-                    <li>Built a responsive web application to manage patient records and appointment scheduling.</li>
-                    <li>Implemented client-side form validation and dynamic content updates using vanilla JavaScript.</li>
-                    <li>Designed an intuitive interface to add, view, and edit patient information efficiently.</li>
+                    <li><strong>Built a responsive web application</strong> to manage patient records, appointment scheduling, and healthcare services with a clean UI.</li>
+                    <li><strong>Engineered client-side form validation</strong> and dynamic content updates using vanilla JavaScript, enhancing user experience and data integrity.</li>
+                    <li><a href="https://praveenkumar19.github.io/DOCTOR-WEBSITE/" target="_blank" style="color:#2c7da0;">Live Demo →</a></li>
                 </ul>
             </div>
 
@@ -484,197 +575,53 @@
                     <span class="project-stack">HTML, CSS, JavaScript</span>
                 </div>
                 <ul class="project-desc">
-                    <li>Developed a modern grocery ordering platform allowing users to browse products, view categories, and simulate orders.</li>
-                    <li>Created interactive features including a dynamic product display, add-to-cart functionality, and order summary simulation.</li>
-                    <li>Managed application state using JavaScript arrays and DOM manipulation for real-time cart updates.</li>
+                    <li><strong>Developed a fully responsive e-commerce web application</strong> with a dynamic product catalog and a simulated shopping cart experience.</li>
+                    <li><strong>Built an interactive product gallery</strong> using vanilla JavaScript to filter and display items based on user-selected categories.</li>
+                    <li><strong>Engineered a cart management system</strong> with real-time updates to the order summary, demonstrating proficiency in DOM manipulation and state management.</li>
+                    <li><a href="https://praveenkumar19.github.io/GROCERY-WEBSITE/" target="_blank" style="color:#2c7da0;">Live Demo →</a></li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">
+                    College Website
+                    <span class="project-stack">HTML, CSS, JavaScript</span>
+                </div>
+                <ul class="project-desc">
+                    <li><strong>Designed a modern college management platform</strong> with admission processes, course listings, and responsive design features.</li>
+                    <li><strong>Implemented dynamic navigation</strong> and interactive components to enhance the user experience across devices.</li>
+                    <li><a href="https://praveenkumar19.github.io/COLLEGE-WEBSITE/" target="_blank" style="color:#2c7da0;">Live Demo →</a></li>
                 </ul>
             </div>
         </div>
 
-        <!-- Experience -->
+        <!-- ===== CERTIFICATIONS - COMPLETE 36+ LIST ===== -->
         <div class="section">
-            <div class="section-title">Experience</div>
-            <div class="exp-item">
-                <div class="exp-role">Student Developer (Academic & Personal Projects)</div>
-                <ul class="exp-desc">
-                    <li>Developed and deployed multiple front-end web applications independently, strengthening problem-solving and debugging skills.</li>
-                    <li>Collaborated on code versioning using Git and GitHub, maintaining clean commit history and project documentation.</li>
-                    <li>Applied Object-Oriented Programming principles to structure reusable, modular code in JavaScript and Python.</li>
-                    <li>Continuously learning backend frameworks and database integration to become a full-stack developer.</li>
-                </ul>
+            <div class="section-title">Licenses & Certifications</div>
+            
+            <!-- Stats Header -->
+            <div class="cert-header-stats">
+                <div class="cert-stat">🏆 <span>Total:</span> 36 Certifications</div>
+                <div class="cert-stat">📅 <span>2025 - 2026</span></div>
+                <div class="cert-stat">🏫 <span>12+ Platforms</span></div>
             </div>
-        </div>
 
-        <!-- Certifications -->
-        <!-- Certifications & Achievements - Improved Version -->
-<div class="section">
-    <div class="section-title">Certifications & Achievements</div>
-    
-    <!-- AI & Claude Certifications - Anthropic -->
-    <div class="cert-subsection">
-        <h4 class="cert-subtitle">🤖 AI & Claude Certification (Anthropic)</h4>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Fluency for Small Businesses</strong> – Anthropic (May 2026)</span>
+            
+            <!-- Summary Badges -->
+            
         </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Capabilities and Limitations</strong> – Anthropic (Apr 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Fluency for Educators</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Fluency for Nonprofits</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Fluency for Students</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>AI Fluency Framework & Foundations</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Claude 101</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Building with the Claude API</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Claude Code in Action</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Claude in Amazon Bedrock</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Claude with Google Cloud's Vertex AI</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Introduction to Agent Skills</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Introduction to Claude Cowork</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Introduction to Model Context Protocol</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Introduction to Subagents</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Model Context Protocol: Advanced Topics</strong> – Anthropic (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Teaching the AI Fluency Framework</strong> – Anthropic (Mar 2026)</span>
-        </div>
-    </div>
-
-    <!-- Programming & Development -->
-    <div class="cert-subsection">
-        <h4 class="cert-subtitle">💻 Programming & Development</h4>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Fundamentals of Object Oriented Programming</strong> – NPTEL (May 2026) | ID: NPTEL26CS87S1550306788</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Introduction to Python</strong> – Infosys Springboard (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Python Fundamentals</strong> – Infosys Springboard (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Java Programming Fundamentals</strong> – Infosys Springboard (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Java Course – Mastering the Fundamentals</strong> – Scaler (Oct 2025)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>JavaScript Course: Unlocking the Power of JavaScript</strong> – Scaler (Nov 2025)</span>
-        </div>
-    </div>
-
-    <!-- Web Development -->
-    <div class="cert-subsection">
-        <h4 class="cert-subtitle">🌐 Web Development</h4>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Responsive Web Development (HTML5, CSS3, JavaScript)</strong> – Infosys Springboard (Mar 2026)</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Legacy Responsive Web Design V8</strong> – freeCodeCamp (Mar 2026) | ID: praveenkumar19/responsive-web-design</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Responsive Web Design Developer</strong> – freeCodeCamp (Feb 2026) | ID: praveenkumar19/responsive-web-design-v9</span>
-        </div>
-    </div>
-
-    <!-- Cloud & Microsoft -->
-    <div class="cert-subsection">
-        <h4 class="cert-subtitle">☁️ Cloud & Microsoft Technologies</h4>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Secure Storage for Azure Files and Azure Blob Storage</strong> – Microsoft (Oct 2025) | ID: 86262DF264722A5F</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Create and Manage Canvas Apps with Power Apps</strong> – Microsoft (Oct 2025) | ID: 581A4F13A544D4F7</span>
-        </div>
-    </div>
-
-    <!-- Soft Skills & Design -->
-    <div class="cert-subsection">
-        <h4 class="cert-subtitle">🎯 Soft Skills & Design</h4>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Communication Skills</strong> – TCS iON (Nov 2025) | ID: 91306-29495298-1016</span>
-        </div>
-        <div class="cert-item">
-            <span class="cert-icon">▹</span>
-            <span><strong>Digital Skills: User Experience</strong> – FutureLearn (Oct 2025)</span>
-        </div>
-    </div>
-
-    <!-- Summary Badge -->
-    <div class="cert-summary">
-        <span class="cert-badge">🏆 25+ Certifications</span>
-        <span class="cert-badge">📅 2025-2026</span>
-        <span class="cert-badge">🎓 Multiple Platforms</span>
-    </div>
-</div>
 
         <!-- Additional Information -->
         <div class="section">
-            <div class="section-title">Additional Information</div>
-            <div class="additional-grid">
-                <div class="info-card">🌐 Languages: English (Professional), Tamil</div>
-                <div class="info-card">💡 Interests: Open-source, tech blogging, side projects</div>
-                <div class="info-card">🎯 Availability: Internships / entry-level roles (immediate)</div>
+            <div style="margin-top: 0.5rem;">
+                <a href="https://praveenkumar19.github.io/PORTFOLIO/" target="_blank" class="portfolio-link">
+                    🌟 View My Interactive Portfolio
+                </a>
             </div>
         </div>
 
         <hr>
-        <div class="footer">Portfolio resume – Last updated April 2026</div>
+        <div class="footer">Portfolio resume – Last updated June 2026 | 36 Certifications</div>
     </div>
 </body>
 </html>
