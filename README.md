@@ -86,20 +86,37 @@ This portfolio represents my skills, projects, and digital presence with an imme
 
 PORTFOLIO/
 │
-├── index.html
-├── my_resume.html
+├── index.html                      # Main portfolio homepage
+├── my_resume.html                  # Resume/CV page
+├── certificates.html               # Certificates gallery page
 │
-├── assets/
-│ ├── signature-dark-.png
-│ ├── signature-light-.png
-│ ├── passport-.png
-│ ├── dr.clinic.jpeg
-│ ├── grocery.png
-│ ├── Campus.jpg
-│ └── canva.png
+├── accenture.png                   # Accenture UX Certificate
+├── anthropic.png                   # Anthropic AI Fluency Certificate
+├── anthropic2.png                  # Anthropic MCP Advanced Certificate
+├── csc-certificate-ADCA-course.png # CSC ADCA Certificate
+├── cybrary.png                     # Cybrary Careers Certificate
+├── cybrary2.png                    # Cybrary Network Basics Certificate
+├── cybrary3.png                    # Cybrary Orientation Certificate
+├── deloitte.png                    # Deloitte Cyber Certificate
+├── freecodecamp.png                # freeCodeCamp Certificate
+├── ibm.png                         # IBM Cybersecurity Certificate
+├── infosys.png                     # Infosys Certificates
+├── microsoft.png                   # Microsoft Certificates
+├── nptel.png                       # NPTEL OOP Certificate
+├── scaler.png                      # Scaler JavaScript Certificate
+├── tcsion.png                      # TCS iON Communication Certificate
 │
-└── README.md
-```
+├── Campus.jpg                      # College Website Project Image
+├── dr.clinic.jpeg                  # DR Clinic Project Image
+├── grocery.png                     # Grocery Website Project Image
+│
+├── passport-.png                   # Profile Photo
+├── signature-dark-.png             # Logo (Dark Mode)
+├── signature-light-.png            # Logo (Light Mode)
+├── canva.png                       # Canva Tool Icon
+│
+├── README.md                       # Project Documentation
+└── image.png                       # (optional - screenshot or preview)
 
 ---
 
